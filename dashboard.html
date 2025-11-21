@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body> 
+       <div id="dbcontainer">
+       <h1 id="dbText">welcome, <b>MR</b> </h1>
+            <div class="card" style="width: 18rem;">
+  <img  id="dbimg" src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li id="one" class="list-group-item">An item</li>
+    <li  id="two" class="list-group-item">A second item</li>
+  </ul>
+  <div style="display: flex; gap:4px ;" class="card-body">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+ Edit Profile
+</button>   
+
+    <button onclick="logoutHandler()" type="button" class="btn btn-primary" >
+Logout
+</button> 
+  </div>
+</div>
+      
+
+     <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Profile Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+  <h2 class="fs-5">First Name</h2>
+  <input id="inpFirstName"  type="text" placeholder="First Name ">
+  <hr>
+  <h2 class="fs-5">Last Name</h2>
+  <input id="inpLastName" type="text" placeholder="Last Name ">
+  <hr> 
+  <h2 class="fs-5">Email</h2>
+  <input id="inpEmail"  type="text" placeholder="email ">
+  <hr>
+  <h2 class="fs-5">Description</h2>
+  <textarea id="inpDescription" placeholder="Add Description" name="" id=""></textarea>
+  <hr>
+  <h2 class="fs-5">Profile Picture URL</h2>
+  <input id="inpPicture" type="text" placeholder="Add Profile Picture URL Here ">
+  <hr>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button onclick="updateProfileHandler ()" type="button" class="btn btn-primary">Update profile</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+       <script src="app3.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
